@@ -10,7 +10,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.phoenix.center_stage_scorer.ui.theme.CenterstagescorerTheme
+import com.phoenix.center_stage_scorer.core.designsystem.theme.CenterstagescorerTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

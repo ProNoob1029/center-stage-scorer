@@ -5,6 +5,7 @@ plugins {
     id("center_stage_scorer.android.application")
     id("center_stage_scorer.android.application.compose")
     id("center_stage_scorer.android.hilt")
+    id("center_stage_scorer.android.application.flavors")
     //alias(libs.plugins.com.android.application)
     //alias(libs.plugins.org.jetbrains.kotlin.android)
 }
@@ -43,7 +44,7 @@ android {
         create("benchmark") {
             // Enable all the optimizations from release build through initWith(release).
             initWith(release)
-            matchingFallbacks.add("release")
+            matchingFallbacks += listOf("release")
             // Debug key signing is available to everyone.
             signingConfig = signingConfigs.getByName("debug")
             // Only use benchmark proguard rules
@@ -79,20 +80,21 @@ android {
 }
 
 dependencies {
+    implementation(project(":core:designsystem"))
 
-    implementation(libs.core.ktx)
     implementation(libs.lifecycle.runtime.ktx)
+    implementation(libs.core.ktx)
     implementation(libs.activity.compose)
     //implementation(platform(libs.compose.bom))
-    implementation(libs.ui)
-    implementation(libs.ui.graphics)
-    implementation(libs.ui.tooling.preview)
-    implementation(libs.material3)
+    //implementation(libs.compose.ui)
+    //implementation(libs.compose.ui.graphics)
+    //implementation(libs.compose.ui.tooling.preview)
+    //implementation(libs.compose.material3)
     testImplementation(libs.junit4)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
     //androidTestImplementation(platform(libs.compose.bom))
-    androidTestImplementation(libs.ui.test.junit4)
-    debugImplementation(libs.ui.tooling)
-    debugImplementation(libs.ui.test.manifest)
+    //androidTestImplementation(libs.compose.ui.test.junit4)
+    //debugImplementation(libs.compose.ui.tooling)
+    debugImplementation(libs.compose.ui.test.manifest)
 }

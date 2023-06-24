@@ -1,3 +1,5 @@
+@file:Suppress("UnstableApiUsage")
+
 pluginManagement {
     includeBuild("build-logic")
     repositories {
@@ -16,4 +18,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "center-stage-scorer"
 include(":app")
- 
+include(":core:designsystem")

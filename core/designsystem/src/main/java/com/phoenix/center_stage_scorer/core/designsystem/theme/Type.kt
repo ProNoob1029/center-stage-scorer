@@ -1,4 +1,4 @@
-package com.phoenix.center_stage_scorer.ui.theme
+package com.phoenix.center_stage_scorer.core.designsystem.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
