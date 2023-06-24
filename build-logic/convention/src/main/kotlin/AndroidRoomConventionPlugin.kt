@@ -12,7 +12,7 @@
  *   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
- *//*
+ */
 
 
 import com.google.devtools.ksp.gradle.KspExtension
@@ -27,6 +27,7 @@ import org.gradle.kotlin.dsl.dependencies
 import org.gradle.process.CommandLineArgumentProvider
 import java.io.File
 
+@Suppress("unused")
 class AndroidRoomConventionPlugin : Plugin<Project> {
 
     override fun apply(target: Project) {
@@ -48,12 +49,10 @@ class AndroidRoomConventionPlugin : Plugin<Project> {
         }
     }
 
-    */
-/**
+    /**
      * https://issuetracker.google.com/issues/132245929
      * [Export schemas](https://developer.android.com/training/data-storage/room/migrating-db-versions#export-schemas)
-     *//*
-
+     */
     class RoomSchemaArgProvider(
         @get:InputDirectory
         @get:PathSensitive(PathSensitivity.RELATIVE)
@@ -61,4 +60,4 @@ class AndroidRoomConventionPlugin : Plugin<Project> {
     ) : CommandLineArgumentProvider {
         override fun asArguments() = listOf("room.schemaLocation=${schemaDir.path}")
     }
-}*/
+}

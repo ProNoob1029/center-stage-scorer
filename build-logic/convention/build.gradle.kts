@@ -39,7 +39,7 @@ dependencies {
     //compileOnly(libs.firebase.crashlytics.gradlePlugin)
     //compileOnly(libs.firebase.performance.gradlePlugin)
     compileOnly(libs.kotlin.gradlePlugin)
-    //compileOnly(libs.ksp.gradlePlugin)
+    compileOnly(libs.ksp.gradlePlugin)
 }
 
 gradlePlugin {
@@ -55,44 +55,44 @@ gradlePlugin {
         /*register("androidApplicationJacoco") {
             id = "nowinandroid.android.application.jacoco"
             implementationClass = "AndroidApplicationJacocoConventionPlugin"
-        }
+        }*/
         register("androidLibraryCompose") {
-            id = "nowinandroid.android.library.compose"
+            id = "center_stage_scorer.android.library.compose"
             implementationClass = "AndroidLibraryComposeConventionPlugin"
         }
         register("androidLibrary") {
-            id = "nowinandroid.android.library"
+            id = "center_stage_scorer.android.library"
             implementationClass = "AndroidLibraryConventionPlugin"
         }
         register("androidFeature") {
-            id = "nowinandroid.android.feature"
+            id = "center_stage_scorer.android.feature"
             implementationClass = "AndroidFeatureConventionPlugin"
         }
-        register("androidLibraryJacoco") {
+        /*register("androidLibraryJacoco") {
             id = "nowinandroid.android.library.jacoco"
             implementationClass = "AndroidLibraryJacocoConventionPlugin"
         }
         register("androidTest") {
             id = "nowinandroid.android.test"
             implementationClass = "AndroidTestConventionPlugin"
-        }
+        }*/
         register("androidHilt") {
-            id = "nowinandroid.android.hilt"
+            id = "center_stage_scorer.android.hilt"
             implementationClass = "AndroidHiltConventionPlugin"
         }
         register("androidRoom") {
-            id = "nowinandroid.android.room"
+            id = "center_stage_scorer.android.room"
             implementationClass = "AndroidRoomConventionPlugin"
         }
-        register("androidFirebase") {
+        /*register("androidFirebase") {
             id = "nowinandroid.android.application.firebase"
             implementationClass = "AndroidApplicationFirebaseConventionPlugin"
-        }
+        }*/
         register("androidFlavors") {
-            id = "nowinandroid.android.application.flavors"
+            id = "center_stage_scorer.android.application.flavors"
             implementationClass = "AndroidApplicationFlavorsConventionPlugin"
         }
-        register("jvmLibrary") {
+        /*register("jvmLibrary") {
             id = "nowinandroid.jvm.library"
             implementationClass = "JvmLibraryConventionPlugin"
         }*/

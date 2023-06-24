@@ -12,10 +12,9 @@
  *   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  *   See the License for the specific language governing permissions and
  *   limitations under the License.
- *//*
+ */
 
-
-import com.android.build.api.dsl.ApplicationExtension
+/*import com.android.build.api.dsl.ApplicationExtension
 import com.google.firebase.crashlytics.buildtools.gradle.CrashlyticsExtension
 import com.phoenix.center_stage_scorer.libs
 import org.gradle.api.Plugin
@@ -52,5 +51,4 @@ class AndroidApplicationFirebaseConventionPlugin : Plugin<Project> {
             }
         }
     }
-}
-*/
+}*/

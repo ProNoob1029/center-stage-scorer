@@ -4,6 +4,7 @@ import com.phoenix.center_stage_scorer.ScorerBuildType
 plugins {
     id("center_stage_scorer.android.application")
     id("center_stage_scorer.android.application.compose")
+    id("center_stage_scorer.android.hilt")
     //alias(libs.plugins.com.android.application)
     //alias(libs.plugins.org.jetbrains.kotlin.android)
 }
@@ -69,6 +70,7 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+    @Suppress("UnstableApiUsage")
     testOptions {
         unitTests {
             isIncludeAndroidResources = true
@@ -86,7 +88,7 @@ dependencies {
     implementation(libs.ui.graphics)
     implementation(libs.ui.tooling.preview)
     implementation(libs.material3)
-    testImplementation(libs.junit)
+    testImplementation(libs.junit4)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
     //androidTestImplementation(platform(libs.compose.bom))

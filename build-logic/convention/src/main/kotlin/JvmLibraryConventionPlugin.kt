@@ -18,6 +18,7 @@ import com.phoenix.center_stage_scorer.configureKotlinJvm
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 
+@Suppress("unused")
 class JvmLibraryConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
