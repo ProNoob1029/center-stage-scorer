@@ -19,3 +19,4 @@ dependencyResolutionManagement {
 rootProject.name = "center-stage-scorer"
 include(":app")
 include(":core:designsystem")
+include(":feature:editor")
