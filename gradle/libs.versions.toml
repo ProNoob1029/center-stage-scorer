@@ -15,6 +15,7 @@ androidxHiltNavigationCompose = "1.0.0"
 kotlinxCoroutines = "1.6.4"
 ksp = "1.8.21-1.0.11"
 room = "2.5.2"
+androidxNavigation = "2.6.0"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidxCore" }
@@ -24,6 +25,7 @@ espresso-core = { group = "androidx.test.espresso", name = "espresso-core", vers
 activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "androidxActivity" }
 android-desugarJdkLibs = { group = "com.android.tools", name = "desugar_jdk_libs", version.ref = "androidDesugarJdkLibs" }
 kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinxCoroutines" }
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "androidxNavigation" }
 
 #room
 room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
